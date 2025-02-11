@@ -14,10 +14,6 @@ return new class extends Migration
         Schema::create('pet', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-
-            $table->unsignedBigInteger('type_id');
-            $table->foreign('type_id')->references('id')->on('type')->onDelete('cascade')->onUpdate('cascade');
-
             $table->integer('age');
             $table->enum('size', ['Grande', 'Médio', 'Pequeno']);
             $table->string('breed');
