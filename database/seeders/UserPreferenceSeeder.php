@@ -4,15 +4,15 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\PreferredSpecies;
+use App\Models\UserPreference;
 
-class PreferredSpeciesSeeder extends Seeder
+class UserPreferenceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        PreferredSpecies::factory(30)->create();
+        UserPreference::factory(150)->create();
     }
 }
