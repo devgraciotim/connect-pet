@@ -17,5 +17,5 @@ class Location extends Model
         'state',
         'city',
         'neighborhood'
-    ]
+    ];
 }

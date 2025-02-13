@@ -24,7 +24,7 @@ class Pet extends Model
         'created_by',
         'type_id',
         'location_id'
-    ]
+    ];
 
     /**
     * Get the user that owns the Pet
